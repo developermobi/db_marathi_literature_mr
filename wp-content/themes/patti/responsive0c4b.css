@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 1160px){
+
+}
+
+@media only screen and (max-width: 992px){
+
+
+}
+
+@media only screen and (max-width: 960px){
+
+
+}
+
+@media only screen and (max-width: 790px){
+
+.socialinfo,.socialinfo ul {
+       text-align: left !Important;
+   float: right !Important;
+    margin: 0 !Important;
+}
+
+.socialinfo {
+    margin-top: 10px !important;
+
+    float: left !Important;
+}
+
+}
+
+@media only screen and (max-width: 600px){
+.eventinfo span {
+    width: 100% !IMPORTANT;
+    float: left;
+    padding: 6px 0;
+    /* text-align: center; */
+}
+
+}
+
+@media only screen and (max-width: 520px){
+
+
+}
+
+@media only screen and (max-width: 380px){
+
+}
