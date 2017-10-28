@@ -207,7 +207,7 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 			logonum = 2;
 		
 		
-		jQuery('.bxslider').bxSlider({
+		var slider = jQuery('.bxslider').bxSlider({
 			minSlides: 2,
 			maxSlides: 6,
 			slideWidth: 175,
@@ -218,100 +218,59 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 			moveSlides: 1,
 		});
 		
-		jQuery('.bxslider1').bxSlider({
+		var slider1 = jQuery('.bxslider1').bxSlider({
 			minSlides: 2,
 			maxSlides: 4,
 			slideWidth: 280,
 			slideMargin: 10,
-			auto:true,infiniteLoop:false,
-			pause:6000,
+			auto:true,//infiniteLoop:false,
+			pause:3000,
 			pager:false,
 			moveSlides: 1,
+			stopAuto: false
+		});
+
+		//alert(slider);
+
+		jQuery(".startBx .bx-next").click(function () {
+
+			console.log('bx-next');            
+			slider.stopAuto();
+			slider.startAuto();
 		});
 		
+		jQuery(".startBx .bx-prev").click(function () {
+
+			console.log('bx-prev');            
+			slider.stopAuto();
+			slider.startAuto();
+		});
+
+		jQuery(".startBx1 .bx-next").click(function () {
+
+			console.log('bx-next1');            
+			slider1.stopAuto();
+			slider1.startAuto();
+		});
+		
+		jQuery(".startBx1 .bx-prev").click(function () {
+
+			console.log('bx-prev1');            
+			slider1.stopAuto();
+			slider1.startAuto();
+		});
 	});
 	
 </script>    
 </head>
 <body class="home page page-id-6 page-template page-template-template-homepage page-template-template-homepage-php wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive">
 	<!-- preloader-->
+	<script type="text/javascript">
+		jQuery(document).on('ready', function() {  
+			jQuery("#header").load('assets/infobar_index.html');
+		});
+	</script>
 	<header id="header" class="transparent-header">
-		<div class="centered-wrapper">
-			<div class="percent-one-fourth no-fullscreen-menu">
-				<div class="logo">
-					<a href="" title="Marathi Literature Festival" rel="home"><img src="wp-content/uploads/2016/11/logo.png" alt="Marathi Literature Festival" /></a>
-				</div>
-				<!--end logo-->
-			</div>
-			<!--end one-fourth-->
-			<a href="../en" class="vc_general vc_btn3 vc_btn3-size-xs vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning marathi-warning" style="float: right; margin-top: -80px; padding: 2px 5px; font-weight: 800" >English</a>
-			<a class="nav-btn " style=""><i class="fa fa-bars"></i></a>
-			<div class="percent-three-fourth column-last">
-				<span class="lang" style="float: right; margin-top: 0px; font-weight: 800;">
-					<a href="../en" class="vc_general vc_btn3 vc_btn3-size-xs vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning marathi-warning" >English</a>
-				</span>
-				<div id="regular-navigation">
-					<div class="flags_language_selector "></div>
-				</div>
-				<nav id="navigation" class="light-header">
-					<div class="menu-menu-1-container">
-						<ul id="mainnav" class="sf-menu">
-							<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-29"><a href="">Home</a></li>
-							<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="about-us">About us</a></li>
-							<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="programme">Programme</a></li>
-							<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="speakers">Speakers</a></li>
-							<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="sponsors">Sponsors</a></li>
-							<li id="menu-item-355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="gallery">Gallery</a></li>
-							<li id="menu-item-334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334"><a href="media">Media</a></li>
-							<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="contact-us">Contact us</a></li>
-						</ul>
-					</div>
-				</nav>
-				<!--end navigation--> 
-			</div>
-			<!--end three-fourth-->
-			<div class="clear"></div>
-		</div>
-		<!--end centered-wrapper-->
-		<div class="infobar ">
-			<div class="centered-wrapper">
-				<div class="eventinfo vc_col-md-6">
-					<span><i class="fa fa-calendar" aria-hidden="true"></i>3rd - 5th Nov, 2017</span>
-					<span><i class="fa fa-map-marker" aria-hidden="true"></i>Kusumagraj Pratishtan</span>
-					<span><i class="fa fa-envelope" aria-hidden="true"></i>mlf@dbcorp.in</span>
-				</div>
-				<div class="socialinfo vc_col-md-6">
-					Connect with us:
-					<ul id="social">
-						<li><a href="https://www.facebook.com/MarathiLiteratureFestival" title="facebook" class="facebook"  target="_blank"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/marathilitfest" title="twitter" class="twitter"  target="_blank"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UCCzy0OcHFTCeLqHz72Xfg3Q" title="youtube" class="youtube"  target="_blank"><i class="fa fa-youtube"></i></a></li>
-						<li><a href="https://www.instagram.com/marathiliteraturefestival/" title="instagram" class="instagram"  target="_blank"><i class="fa fa-instagram"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="stickhead">
-			<div class="centered-wrapper">
-				<div class="percent-one-fourth stickytitle">
-					Marathi Literature Festival
-				</div>
-				<nav id="stickynav" class="stickymenu">
-					<div class="menu-menu-1-container">
-						<ul id="stickymainnav" class="sf-menu">
-							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-29"><a href="">Home</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="about-us">About us</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="programme">Programme</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="speakers">Speakers</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="sponsors">Sponsors</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="gallery">Gallery</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334"><a href="media">Media</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="contact-us">Contact us</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
 	</header>
 	<div id="wrapper">
 		<div id="hello"></div>
@@ -337,13 +296,13 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 						<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-6 vc_col-lg-6 vc_col-lg-offset-3">
 							<center>
 								<div class="vc_col-sm-12 vc_col-md-4 vc_col-lg-4 btn_div">
-									<a href="programme" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat "  title="" id="send_button" style="width:180px; z-index: 6; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);background-color:rgba(0, 19, 168, 0.75);padding:12px 35px 12px 35px;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><b>Event Schedule</b></a>
+									<a href="programme" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat "  title="" id="send_buttonq" style="width:180px; z-index: 6; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);background-color:rgba(0, 19, 168, 0.75);padding:12px 35px 12px 35px;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><b>कार्यक्रमाची रूपरेषा</b></a>
 								</div>
 								<div class="vc_col-sm-12 vc_col-md-4 vc_col-lg-4 btn_div">
-									<a href="speaker" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat " title="" id="send_button" style="width:180px; z-index: 7; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);background-color:rgba(0, 135, 0, 0.75);padding:12px 35px 12px 35px;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><b>Speakers</b></a>
+									<a href="speakers" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat " title="" id="send_buttonq" style="width:180px; z-index: 7; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);background-color:rgba(0, 135, 0, 0.75);padding:12px 35px 12px 35px;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><b>वक्ते</b></a>
 								</div>
 								<div class="vc_col-sm-12 vc_col-md-4 vc_col-lg-4 btn_div">
-									<a href="contact-us" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat " title="" id="send_button" style="width:180px; z-index: 8; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);background-color:rgba(150, 0, 42, 0.75);padding:12px 35px 12px 35px;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><b>Register Now</b></a>
+									<a href="contact-us" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat " title="" id="send_buttonq" style="width:180px; z-index: 8; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);background-color:rgba(150, 0, 42, 0.75);padding:12px 35px 12px 35px;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><b>नावनोंदणी</b></a>
 								</div>
 							</center>
 						</div>
@@ -361,19 +320,19 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 					<div class="wpb_column vc_column_container vc_col-sm-8">
 						<div class="vc_column-inner ">
 							<div class="wpb_wrapper">
-								<h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead">About us</h2>
+								<h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead">आमच्याबद्दल</h2>
 								<div class="wpb_text_column wpb_content_element ">
 									<div class="wpb_wrapper">
-										<p style="text-align: justify;">The first of its kind literary fest in Nasik was organized under the aegis of Divya Marathi from 11th-13th November 2016 with 21 sessions and 54 authors.
+										<p style="text-align: justify;">दैनिक दिव्य मराठीतर्फे नाशिक येथे पहिल्यांदाच असा अद्भूत आणि विलक्षण असे मराठी साहित्य संमेलन ११ ते १३ नोव्हेंबर २०१६ ला घेण्यात आले, ज्यात एकूण २१ कार्यक्रमातून ५४ नामवंत लेखकानी आपली उपस्थिती दिली होती.
 										</p>
 										
-										<p style="text-align: justify;">This year too - The Marathi Literature Festival will be held on 3rd - 5th of November 2017 in Nasik based on the theme 'Confluence of Independent Thinkers‘ with 20 sessions and 45 authors.
+										<p style="text-align: justify;">यावर्षी देखील मराठी साहित्य संमेलन घेण्यात येणार आहे, ज्यात मुख्यत २६ कार्यक्रम, ५ कार्यशाळा आणि ७० लेखक असतील. हा संमेलन ३ ते ५ नोव्हेंबरला आयोजित करण्यात आला असून ह्यावर्षी ‘स्वतंत्र विचारांचे व्यासपीठ’ चे शीर्षक आहे.
 										</p>
 
-										<p style="text-align: justify;">The literary festival aims at giving thinkers a platform to people who have dared to think beyond ordinary and express independently. It brings forth diversity as the festival will have a dynamic mix of sessions in English, Hindi and Marathi language,making the experience truly enriching for everyone.
+										<p style="text-align: justify;">ह्या संमेलना मागील उधिष्ट अगदी स्पष्ट आहे कि चौकटी बाहेरील विचार करणाऱ्यांचे विचार वाचकांपर्यंत पोहोचावे आणि त्यांना योग्य तो दिशा मिळावी. हा संमेलन मराठी, इंग्रजी आणि हिंदी भाषेत असणार आहे.
 										</p>
 
-										<p style="text-align: justify;">The three day festival will be held at Kusumagraj Pratishtan. A much revered venue, it is named after Vishnu Vaman Shirwadkar, popularly known by his pen name Kusumagraj. Recipient of Padma Bhushan and Jnanpith, he is known for his works like the Vishakha (1942), Natsamrat which are considered as masterpieces in Marathi Literature.
+										<p style="text-align: justify;">संमेलनाचे ठिकाण हे नाशिक येथील कुसुमाग्रज प्रतिष्ठा आहे, ज्याला ज्ञानपीठ आणि पद्मभूषण पुरस्कृत विष्णू वामन शिरवाडकर ह्यांच्या स्मृतीतून ठेवलेले आहे, ज्यांना आपण कुसुमाग्रज ह्या नावाने आणि त्यांच्या अजरामर ‘विशाखा’ आणि नटसम्राट’ ह्या महाकाव्याने ओळखतो. हे ठिकाण म्हणजे साहित्यिक संस्कृती जोपासणारे स्थळ म्हणून प्रचलित आहे.
 										</p>
 									</div>
 								</div>
@@ -381,30 +340,20 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 						</div>
 					</div>
 					<div class="wpb_column vc_column_container vc_col-sm-4">
-						<div class="vc_column-inner ">
+						<div class="vc_column-inner " style="padding-top: 85px;">
 							<div class="wpb_wrapper">            
-
-								<!-- <h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead">Videos</h2> -->
-        <!-- <div class="wpb_video_widget wpb_content_element vc_clearfix   vc_video-aspect-ratio-43 vc_video-el-width-100 vc_video-align-left">
-        <div class="wpb_wrapper">
-        <div class="wpb_video_wrapper"><iframe width="500" height="281" src="https://www.youtube.com/embed/DztbEnxu9p0?feature=oembed" frameborder="0" allowfullscreen></iframe></div>
-        </div>
-        </div>
-        <center>
-        <div class="vc_btn3-container  vc_btn3-inline"><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning gujarati-warning" href="https://www.youtube.com/channel/UCCzy0OcHFTCeLqHz72Xfg3Q" title="" target="_blank">Watch all videos</a></div>
-    </center> -->
-    <div class="wpb_single_image wpb_content_element vc_align_left">
-    	<figure class="wpb_wrapper vc_figure">
-    		<div class="vc_single_image-wrapper vc_box_border_grey"><img width="450" height="302" src="wp-content/uploads/2016/11/MLFlogo.png" class="vc_single_image-img attachment-full" alt="mlflogo" srcset="wp-content/uploads/2016/11/MLFlogo.png 450w, wp-content/uploads/2016/11/MLFlogo.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></div>
-    	</figure>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+								<div class="wpb_single_image wpb_content_element vc_align_left">
+									<figure class="wpb_wrapper vc_figure">
+										<div class="vc_single_image-wrapper vc_box_border_grey"><img width="450" height="302" src="wp-content/uploads/2016/11/MLFlogo.png" class="vc_single_image-img attachment-full" alt="mlflogo" srcset="wp-content/uploads/2016/11/MLFlogo.png 450w, wp-content/uploads/2016/11/MLFlogo.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></div>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <div id="speakerrow"  class="vc_row wpb_row vc_row-fluid"  style=""  data-token="zPKEp">
 	<div class="wpb_column vc_column_container vc_col-sm-12">
@@ -414,7 +363,7 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 					<div class="wpb_column vc_column_container vc_col-sm-12">
 						<div class="vc_column-inner ">
 							<div class="wpb_wrapper">
-								<h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead">Speakers</h2>
+								<h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead">वक्ते</h2>
 							</div>
 						</div>
 					</div>
@@ -425,52 +374,49 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 							<div class="wpb_wrapper">
 								<div class="wpb_text_column wpb_content_element ">
 									<div class="wpb_wrapper">
-										<div class="speakerslider">
+										<div class="speakerslider startBx">
 											<ul class="bxslider">
 												<li>
-													<div class="speakerbox"><img src="wp-content/uploads/2016/11/Sai-Paranjpye-Author-Director.png"><span class="speakername">Sai Paranjpye</span></div>
+													<div class="speakerbox"><a href="speaker/devdutt-pattanaik/"><img  src="wp-content/uploads/2016/12/devdutt_pattnaik.png"><span class="speakername">Devdutta Pattanaik</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><img src="wp-content/uploads/2016/11/Rakesh-Bedi.png"><span class="speakername">Rakesh Bedi</span></div>
+													<div class="speakerbox"><a href="speaker/sheela-reddy/"><img src="wp-content/uploads/2016/12/sheela_reddy.png"><span class="speakername">Sheela Reddy</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><a href="speaker/ashutosh-gowariker/"><img src="wp-content/uploads/2016/11/Ashutosh-Gowariker-1.png"><span class="speakername">Ashutosh Gowariker</span></a></div>
+													<div class="speakerbox"><a href="speaker/anand-hardikar/"><img src="wp-content/uploads/2016/12/anand_hardikar.png"><span class="speakername">Anand Hardikar</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><a href="speaker/prakash-jha/"><img src="wp-content/uploads/2016/11/Prakash-Jha_1-1.png"><span class="speakername">Prakash Jha</span></a></div>
+													<div class="speakerbox"><a href="speaker/rajiv-dogra/"><img src="wp-content/uploads/2016/12/rajiv_dogra.png"><span class="speakername">Rajiv Dogra</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><img src="wp-content/uploads/2016/11/Gen-V.K.-Singh.png"><span class="speakername">Gen V.K. Singh</span></div>
+													<div class="speakerbox"><a href="speaker/abid-surti/"><img src="wp-content/uploads/2016/12/abid_surti.png"><span class="speakername">Abid Surti</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><a href="speaker/vikas-singh/"><img src="wp-content/uploads/2016/11/vikas-singh.png"><span class="speakername">Vikas Singh</span></a></div>
+													<div class="speakerbox"><a href="speaker/alok-sharma/"><img  src="wp-content/uploads/2016/12/alok_sharma.png"><span class="speakername">Alok Sharma</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><a href="speaker/savi-sharma/"><img src="wp-content/uploads/2016/11/Savi-Sharma.png"><span class="speakername">Savi Sharma</span></a></div>
+													<div class="speakerbox"><a href="speaker/anupam-sinha/"><img src="wp-content/uploads/2016/12/anupam_sinha.png"><span class="speakername">Anupam Sinha</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><a href="speaker/divya-prakash-dubey/"><img src="wp-content/uploads/2016/11/Divya-Prakash.png"><span class="speakername">Divya Prakash Dubey</span></a></div>
+													<div class="speakerbox"><a href="speaker/vinayak-patil/"><img src="wp-content/uploads/2016/12/vinayak_patil.png"><span class="speakername">Vinayak Patil</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><a href="speaker/anjum-rajabali/"><img src="wp-content/uploads/2016/11/Anjum-Rajabali-1.png"><span class="speakername">Anjum Rajabali</span></a></div>
+													<div class="speakerbox"><a href="speaker/chinmay-udgirkar/"><img  src="wp-content/uploads/2016/12/chinmay_udgirkar.png"><span class="speakername">Chinmay Udgirkar</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><img src="wp-content/uploads/2016/11/Pushpesh-Pant.png"><span class="speakername">Pushpesh Pant</span></div>
+													<div class="speakerbox"><a href="speaker/sachin-mote/"><img src="wp-content/uploads/2016/12/sachin_mote.png"><span class="speakername">Sachin Mote</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><a href="speaker/triambak-sharma/"><img src="wp-content/uploads/2016/11/Triambak-Sharma.png"><span class="speakername">Triambak Sharma</span></a></div>
+													<div class="speakerbox"><a href="speaker/sachin_goswami/"><img src="wp-content/uploads/2016/12/sachin_goswami.png"><span class="speakername">Sachin Goswami</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><a href="speaker/dinkar-gangal/"><img src="wp-content/uploads/2016/11/Dinkar-Gangal-Editor-Granthali-.png"><span class="speakername">Dinkar Gangal</span></a></div>
+													<div class="speakerbox"><a href="speaker/sudhir_rasal/"><img src="wp-content/uploads/2016/12/sudhir_rasal.png"><span class="speakername">Sudhir Rasal</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><img src="wp-content/uploads/2016/11/Shriranjan-Awate.png"><span class="speakername">Shriranjan Awate</span></div>
+													<div class="speakerbox"><a href="speaker/sanjay-bhaskar-joshi/"><img src="wp-content/uploads/2016/12/sanjay_bhaskar_joshi.png"><span class="speakername">Sanjay Bhaskar Joshi</span></a></div>
 												</li>
 												<li>
-													<div class="speakerbox"><a href="speaker/rakesh-wankhede/"><img src="wp-content/uploads/2016/11/Rakesh-Wankhede.png"><span class="speakername">Rakesh Wankhede</span></a></div>
-												</li>
-												<li>
-													<div class="speakerbox"><a href="speaker/sanjay-parmar/"><img src="wp-content/uploads/2016/11/Sanjay-Parmar.png"><span class="speakername">Sanjay Parmar</span></a></div>
+													<div class="speakerbox"><a href="speaker/neelima-chauhan/"><img src="wp-content/uploads/2016/12/neelima_chauhan.png"><span class="speakername">Neelima Chauhan</span></a></div>
 												</li>
 											</ul>
 										</div>
@@ -484,7 +430,7 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 					<div class="wpb_column vc_column_container vc_col-sm-12">
 						<div class="vc_column-inner ">
 							<div class="wpb_wrapper">
-								<div class="vc_btn3-container  allspeaker vc_btn3-center"><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning gujarati-warning" href="speakers/" title="">View all speakers</a></div>
+								<div class="vc_btn3-container  allspeaker vc_btn3-center"><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning gujarati-warning" href="speakers/" title="">इतर वक्ते</a></div>
 							</div>
 						</div>
 					</div>
@@ -501,7 +447,7 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 					<div class="wpb_column vc_column_container vc_col-sm-12">
 						<div class="vc_column-inner ">
 							<div class="wpb_wrapper">
-								<h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead">Sponsors</h2>
+								<h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead">प्रायोजक</h2>
 							</div>
 						</div>
 					</div>
@@ -512,14 +458,20 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 							<div class="wpb_wrapper">
 								<div class="wpb_text_column wpb_content_element ">
 									<div class="wpb_wrapper">
-										<div class="logoset">
+										<div class="logoset startBx1">
 											<ul class="bxslider1">
-												<li><img  src="wp-content/uploads/2016/11/express-inn.png"></li>
-												<li><img  src="wp-content/uploads/2016/11/abp-majha.png"></li>
-												<li><img  src="wp-content/uploads/2016/11/rajhans.png"></li>
-												<li><img  src="wp-content/uploads/2016/11/kusumagraj.png"></li>
-												<li><img  src="wp-content/uploads/2016/11/vani.png"></li>
-												<li><img  src="wp-content/uploads/2016/11/westland.png"></li>
+												<li><img src="wp-content/uploads/2016/13/Express_inn.png"></li>
+												<li><img src="wp-content/uploads/2016/13/ABP_Manjha.png"></li>
+												<li><img src="wp-content/uploads/2016/13/Kusumagraj.png"></li>
+												<li><img src="wp-content/uploads/2016/13/Vishwas_Bank.png"></li>
+												<li><img src="wp-content/uploads/2016/13/Violin.png"></li>
+												<li><img src="wp-content/uploads/2016/13/Rajhans.png"></li>
+												<li><img src="wp-content/uploads/2016/13/Vani_Prakashan.png"></li>
+												<li><img src="wp-content/uploads/2016/13/SRK_Terers.png"></li>
+												<li><img src="wp-content/uploads/2016/13/mobisoft.png"></li>
+												<li><img src="wp-content/uploads/2016/13/Shree_Balaji.png"></li>
+												<li><img src="wp-content/uploads/2016/13/MY_FM.png"></li>
+												<li><img src="wp-content/uploads/2016/13/Divya_Marathi.png"></li>
 											</ul>
 										</div>
 									</div>
@@ -540,7 +492,7 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 					<div class="wpb_column vc_column_container vc_col-sm-12">
 						<div class="vc_column-inner ">
 							<div class="wpb_wrapper">
-								<h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead">Gallery</h2>
+								<h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead">चित्रफीत</h2>
 							</div>
 						</div>
 					</div>
@@ -668,10 +620,10 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 					<div class="wpb_column vc_column_container vc_col-sm-12">
 						<div class="vc_column-inner ">
 							<div class="wpb_wrapper">
-								<h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead center">Contact us</h2>
+								<h2 style="text-align: left;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading shead center">संपर्क</h2>
 								<div role="form" class="wpcf7" id="wpcf7-f4-p6-o1" lang="en-US" dir="ltr">
 									<div class="screen-reader-response"></div>
-									<form action="http://marathiliteraturefestival.com/#wpcf7-f4-p6-o1" method="post" class="wpcf7-form demo" novalidate="novalidate" id="contact_form">
+									<form method="post" class="wpcf7-form demo" novalidate="novalidate" id="contact_form">
 										<div style="display: none;">
 											<input type="hidden" name="_wpcf7" value="4" />
 											<input type="hidden" name="_wpcf7_version" value="4.5.1" />
@@ -679,12 +631,12 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 											<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-p6-o1" />
 											<input type="hidden" name="_wpnonce" value="e068203244" />
 										</div>
-										<div class="vc_col-md-6"><span class="wpcf7-form-control-wrap your-fname"><input type="text" name="fname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name" id="fname" /></span> </div>
-										<div class="vc_col-md-6"><span class="wpcf7-form-control-wrap your-lname"><input type="text" name="lname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last Name" id="lname" /></span> </div>
-										<div class="vc_col-md-6"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email id" id="email" /></span> </div>
-										<div class="vc_col-md-6"><span class="wpcf7-form-control-wrap your-contact"><input type="text" name="mobile" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Contact number" id="mobile" /></span> </div>
-										<div class="vc_col-md-12"><span class="wpcf7-form-control-wrap your-message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message" id="message"></textarea></span> </div>
-										<div class="vc_col-md-3"><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning gujarati-warning" onclick="sendMail()" title="" id="send_button" style="padding: 15px 60px;">Send</a></div>
+										<div class="vc_col-md-6"><span class="wpcf7-form-control-wrap your-fname"><input type="text" name="fname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="पहिले नाव*" id="fname" /></span> </div>
+										<div class="vc_col-md-6"><span class="wpcf7-form-control-wrap your-lname"><input type="text" name="lname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="आडनावं" id="lname" /></span> </div>
+										<div class="vc_col-md-6"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="इमेल*" id="email" /></span> </div>
+										<div class="vc_col-md-6"><span class="wpcf7-form-control-wrap your-contact"><input type="text" name="mobile" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="भ्रमणध्वनी*" id="mobile" /></span> </div>
+										<div class="vc_col-md-12"><span class="wpcf7-form-control-wrap your-message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="संदेश*" id="message"></textarea></span> </div>
+										<div class="vc_col-md-3"><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning gujarati-warning" onclick="sendMail()" title="" id="send_button" style="padding: 15px 60px;">पाठवा</a></div>
 										<div class="wpcf7-response-output wpcf7-display-none"></div>
 									</form>
 								</div>
@@ -705,8 +657,13 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 	<!--end centered-wrapper-->
 	<div id="bottomfooter"  >
 		<div class="centered-wrapper">
-			<div class="percent-two-third">
-				<p>© 2017 MLF. All rights reserved.</p>
+			<div class="percent-one-third">
+				<p>© 2017 MLF. सर्व अधिकार राखीव.</p>
+			</div>
+			<div class="percent-one-third">
+				<center>
+					पावर्ड बाय<a href="http://www.mobisofttech.co.in" target="_BLANK" style="text-decoration: none; border-bottom: 1px solid #3e70fd; color: #000;"> Mobisoft Technology India Pvt. Ltd.</a>
+				</center>
 			</div>
 			<!--end percent-two-third-->
 			<div class="percent-one-third column-last">
@@ -809,50 +766,160 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
                 var email= jQuery("#email").val();
                 var mobile= jQuery("#mobile").val();
                 var message= jQuery("#message").val();
-                
-                jQuery.ajax({
-                	type: "post",
-                	url: "sendmail.php",
-                	data: {
-                		fname:fname,
-                		lname:lname,
-                		email:email,
-                		mobile:mobile,
-                		message:message,
-                	},
-                	dataType: "json",
-                	beforeSend: function() {
-                		jQuery("#send_button").prop('disabled', true).text('Please Wait...');
-                	},
-                	success: function(response){
-                		if(response.code == 1){
-                			swal("Success!", "Mail Sent Successfully!", "success");
-                			jQuery('#contact_form').trigger("reset");
-                		}else{
-                			swal("Failed!", "Something went wrong while sending mail. Please try again.", "error");
-                		}
-                	},
-                	complete:function(){
-                		jQuery("#send_button").prop('disabled', false).text('Send');
-                	}
-                });
-            }
-        </script>
-        <script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript">
-        	jQuery(document).on('ready', function() {      
-        		jQuery(".lazy").slick({
-            lazyLoad: 'ondemand', // ondemand progressive anticipated
-            infinite: true,
-            arrows: false,
-            autoplay: true,
-            dots: true,
-            speed: 500,
-            slidesToShow: 1,
-            fade: true,
-            cssEase: 'linear'
-        });
-        	});
-        </script>
-    </body>
-    </html>
+
+                if(jQuery("#contact_form").find('.error').length != 0){
+			        //alert("Not allowed");
+			        return false;
+			    }   
+
+			    if(fname == ''){
+			    	jQuery('span.error-keyup-fname').remove();
+			    	jQuery('span.required-error').remove();
+			    	jQuery('span.last-error').remove();
+			    	jQuery("#fname").after('<span class="error error-keyup-fname">Please enter first name.</span>');
+			    	return false;
+			    }
+
+			    if(email == ''){
+			    	jQuery('span.error-keyup-email').remove();
+			    	jQuery('span.required-error').remove();
+			    	jQuery('span.last-error').remove();
+			    	jQuery("#email").after('<span class="error error-keyup-email">Please enter email id.</span>');
+			    	return false;
+			    }
+
+			    if(mobile == ''){
+			    	jQuery('span.error-keyup-mobile').remove();
+			    	jQuery('span.required-error').remove();
+			    	jQuery('span.last-error').remove();
+			    	jQuery("#mobile").after('<span class="error error-keyup-mobile">Please enter mobile number.</span>');
+			    	return false;
+			    }
+
+			    if(message == ''){
+			    	jQuery('span.error-keyup-message').remove();
+			    	jQuery('span.required-error').remove();
+			    	jQuery('span.last-error').remove();
+			    	jQuery("#message").after('<span class="error error-keyup-message">Please enter message.</span>');
+			    	return false;
+			    }else{
+			    	jQuery('span.error-keyup-message').remove();
+			    	jQuery('span.required-error').remove();
+			    	jQuery('span.last-error').remove();
+			    }
+
+			    jQuery.ajax({
+			    	type: "post",
+			    	url: "sendmail.php",
+			    	data: {
+			    		fname:fname,
+			    		lname:lname,
+			    		email:email,
+			    		mobile:mobile,
+			    		message:message,
+			    	},
+			    	dataType: "json",
+			    	beforeSend: function() {
+			    		jQuery("#send_button").prop('disabled', true).text('Please Wait...');
+			    	},
+			    	success: function(response){
+			    		if(response.code == 1){
+			    			swal("Success!", "Mail Sent Successfully!", "success");
+			    			jQuery('#contact_form').trigger("reset");
+			    		}else{
+			    			swal("Failed!", "Something went wrong while sending mail. Please try again.", "error");
+			    		}
+			    	},
+			    	complete:function(){
+			    		jQuery("#send_button").prop('disabled', false).text('Send');
+			    	}
+			    });
+			}
+		</script>
+		<script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			jQuery(document).on('ready', function() {      
+				jQuery(".lazy").slick({
+					lazyLoad: 'ondemand',
+					infinite: true,
+					arrows: false,
+					autoplay: true,
+					dots: true,
+					speed: 500,
+					slidesToShow: 1,
+					fade: true,
+					cssEase: 'linear'
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			jQuery('#fname').on('keyup change',function() {
+				jQuery('span.error-keyup-fname').remove();
+				jQuery('span.required-error').remove();
+				jQuery('span.last-error').remove();
+				var inputVal = jQuery(this).val();
+				var characterReg = /^\s*[a-zA-Z0-9,\s]+\s*$/;
+				if(inputVal == ""){
+					jQuery('span.error-keyup-fname').remove();
+				}else if(!characterReg.test(inputVal)) {
+					jQuery(this).after('<span class="error error-keyup-fname">No special characters allowed.</span>');
+				}
+			});
+
+			jQuery('#lname').on('keyup change',function() {
+				jQuery('span.error-keyup-lname').remove();
+				jQuery('span.required-error').remove();
+				jQuery('span.last-error').remove();
+				var inputVal = jQuery(this).val();
+				var characterReg = /^\s*[a-zA-Z0-9,\s]+\s*$/;
+				if(inputVal == ""){
+					jQuery('span.error-keyup-lname').remove();
+				}else if(!characterReg.test(inputVal)) {
+					jQuery(this).after('<span class="error error-keyup-lname">No special characters allowed.</span>');
+				}
+			});
+
+			jQuery('#mobile').on('keyup change',function() {
+				jQuery('span.error-keyup-mobile').remove();
+				jQuery('span.required-error').remove();
+				jQuery('span.last-error').remove();
+				var inputVal = jQuery(this).val();
+				var characterReg = /^\s*[a-zA-Z0-9,\s]+\s*$/;
+				if(inputVal == ""){
+					jQuery('span.error-keyup-mobile').remove();
+				}else if(inputVal.match(/^(\+\d{1,3}[- ]?)?\d{10}$/) && ! (inputVal.match(/0{5,}/)) ) {
+					jQuery('span.error-keyup-mobile').remove();
+				}else{
+					jQuery(this).after('<span class="error error-keyup-mobile">Invalid mobile number.</span>');
+				}
+			});
+
+			jQuery('#email').on('keyup change',function() {
+				jQuery('span.error-keyup-email').remove();
+				jQuery('span.required-error').remove();
+				jQuery('span.last-error').remove();
+				var inputVal = jQuery(this).val();
+				var characterReg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				if(inputVal == ""){
+					jQuery('span.error-keyup-email').remove();
+				}else if(!characterReg.test(inputVal)) {
+					jQuery(this).after('<span class="error error-keyup-email">Invalid Email Id.</span>');
+				}
+			});
+
+		</script>
+	</body>
+	<style>
+	.error {
+		color: #fff;
+		background-color: rgb(230, 92, 92);
+		position: absolute;
+		padding: 5px;
+		border-radius: 3px;
+		z-index: 99;
+		width: 250px;
+		margin-top: -21px;
+	}
+</style>
+</html>

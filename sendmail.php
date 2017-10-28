@@ -55,7 +55,7 @@ $html_body = '<html lang="en">
 </table>
 </body>';
 
-$mail_sent_admin = send_admin_mail($html_body);	
+$mail_sent_admin = send_admin_mail($html_body,$mobile,$fname,$lname);	
 
 if($mail_sent_admin == 1){		
 	$data = array();
@@ -72,7 +72,7 @@ echo json_encode($data, true);
 
 
 
-function send_admin_mail($mailContent){ 
+function send_admin_mail($mailContent,$mobile,$fname,$lname){ 
 
 	$subject = "Marathi Literature Festival";
 	date_default_timezone_set('Asia/Calcutta');
@@ -88,12 +88,17 @@ function send_admin_mail($mailContent){
 
 	$mail->Username = "asmitahospitality1@gmail.com";
 	$mail->Password = "click@123";
-	$mail->setFrom('asmitahospitality1@gmail.com', 'Marathi Literature Festival');                                
+	$mail->setFrom('mlf@dbcorp.in', 'Marathi Literature Festival');                                
 
 	$mail->isHTML(true);
 	$mail->Subject = $subject;
 	$mail->MsgHTML($mailContent);
-	$mail->AddAddress('prajwal.p@mobisofttech.co.in');
+	$mail->AddAddress('mlf@dbcorp.in');
+
+	$msgbody="Dear ".$fname." ".$lname." Thank You for contacting Dainik Bhaskar Marathi Literature Festival. ";
+	$msgbody=urlencode($msgbody);
+	$smsUrl="http://makemysms.in/api/sendsms.php?username=longcode&password=mGRLc6F0&sender=DBCORP&mobile=".$mobile."&type=1&message=".$msgbody;
+	file_get_contents($smsUrl);
 
 	if(!$mail->Send()){
 		return json_encode("Mailer Error: " . $mail->ErrorInfo);

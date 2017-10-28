@@ -2058,7 +2058,7 @@ ul#filters li.selected a {
 	text-align:center;
 	overflow:hidden;
 	clear:both;
-	
+
 	font-size: 14px;
 }
 
@@ -2276,7 +2276,7 @@ html .testimonial-item em {
 
 a[rel="PrettyPhoto"] {
 	overflow:hidden;
-	display:block;
+	/*display:block;*/
 }
 
 #testimonials {
@@ -3900,7 +3900,7 @@ ul#social li a:hover {
 	margin:0;
 	font-size: 14px;
 	cursor:pointer;
-	
+
 	padding: 12px 40px 12px 0;
 	color: #444;
 	font-weight: 700;
@@ -4379,10 +4379,10 @@ html .wpb_content_element .wpb_tour_tabs_wrapper .wpb_tabs_nav li.ui-state-activ
 
 .bold-fill .dt-service-icon i {
 	color: #fff;
-	width: 48px;
-	height: 48px;
-	line-height: 48px;
-	font-size: 28px;
+	width: 28px;
+	height: 28px;
+	line-height: 30px;
+	font-size: 20px;
 	text-align: center;
 }
 

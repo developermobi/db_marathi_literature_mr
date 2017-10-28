@@ -115,25 +115,25 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 </noscript>
 <script>
 	jQuery(document).ready(function() {
-		
+
 		if(jQuery('.axgmap').length){
 			var mapleft = jQuery('.axgmap').offset().left;
 			jQuery('.axgmap').css('margin-left',-mapleft);
 			jQuery('.axgmap').width(jQuery('.axgmap').width()+(mapleft*2));
 		}
-		
+
 		jQuery('.speakerbox').each(function(){
 			var speakerboxwidth = jQuery(this).outerWidth();
 			jQuery(this).height(speakerboxwidth*(7/5));
 		});
-		
+
 		var logonum = 6;
 		if(screen.width<720)
 			logonum = 4;
 		if(screen.width<520)
 			logonum = 2;
-		
-		
+
+
 		jQuery('.bxslider').bxSlider({
 			minSlides: 2,
 			maxSlides: 6,
@@ -144,7 +144,7 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 			pager:false,
 			moveSlides: 1,
 		});
-		
+
 		jQuery('.bxslider1').bxSlider({
 			minSlides: 2,
 			maxSlides: 4,
@@ -155,101 +155,31 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 			pager:false,
 			moveSlides: 1,
 		});
-		
+
 	});
-	
-	
-	
-	
-	
+
+
+
+
+
 </script>		
 </head>
 <body class="page page-id-16 page-template-default wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive">
 	<!-- preloader-->
+	<script type="text/javascript">
+		jQuery(document).on('ready', function() {  
+			jQuery("#header").load('../assets/infobar.html');
+		});
+	</script>
 	<header id="header" class="transparent-header">
-		<div class="centered-wrapper">
-			<div class="percent-one-fourth no-fullscreen-menu">
-				<div class="logo">
-					<a href="../" title="Marathi Literature Festival" rel="home"><img src="../wp-content/uploads/2016/11/logo.png" alt="Marathi Literature Festival" /></a>
-				</div>
-				<!--end logo-->
-			</div>
-			<!--end one-fourth-->
-			<a href="../../en" class="vc_general vc_btn3 vc_btn3-size-xs vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning marathi-warning" style="float: right; margin-top: -80px; padding: 2px 5px; font-weight: 800" >English</a>
-			<a class="nav-btn " style=""><i class="fa fa-bars"></i></a>
-			<div class="percent-three-fourth column-last">
-				<span class="lang" style="float: right; margin-top: 0px; font-weight: 800;">
-					<a href="../../en" class="vc_general vc_btn3 vc_btn3-size-xs vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning marathi-warning" >English</a>
-				</span>
-				<div id="regular-navigation">
-					<div class="flags_language_selector "></div>
-				</div>
-				<nav id="navigation" class="light-header">
-					<div class="menu-menu-1-container">
-						<ul id="mainnav" class="sf-menu">
-							<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="../">Home</a></li>
-							<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="../about-us/">About us</a></li>
-							<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="../programme/">Programme</a></li>
-							<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="../speakers/">Speakers</a></li>
-							<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-16 current_page_item menu-item-37"><a href="../sponsors">Sponsors</a></li>
-							<li id="menu-item-355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="../gallery/">Gallery</a></li>
-							<li id="menu-item-334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334"><a href="../media/">Media</a></li>
-							<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="../contact-us/">Contact us</a></li>
-						</ul>
-					</div>
-				</nav>
-				<!--end navigation-->	
-			</div>
-			<!--end three-fourth-->
-			<div class="clear"></div>
-		</div>
-		<!--end centered-wrapper-->
-		<div class="infobar ">
-			<div class="centered-wrapper">
-				<div class="eventinfo vc_col-md-6">
-					<span><i class="fa fa-calendar" aria-hidden="true"></i>3rd - 5th Nov, 2017</span>
-					<span><i class="fa fa-map-marker" aria-hidden="true"></i>Kusumagraj Pratishtan</span>
-					<span><i class="fa fa-envelope" aria-hidden="true"></i>mlf@dbcorp.in</span>
-				</div>
-				<div class="socialinfo vc_col-md-6">
-					Connect with us:
-					<ul id="social">
-						<li><a href="https://www.facebook.com/MarathiLiteratureFestival" title="facebook" class="facebook"  target="_blank"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/marathilitfest" title="twitter" class="twitter"  target="_blank"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UCCzy0OcHFTCeLqHz72Xfg3Q" title="youtube" class="youtube"  target="_blank"><i class="fa fa-youtube"></i></a></li>
-						<li><a href="https://www.instagram.com/marathiliteraturefestival/" title="instagram" class="instagram"  target="_blank"><i class="fa fa-instagram"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="stickhead">
-			<div class="centered-wrapper">
-				<div class="percent-one-fourth stickytitle">
-					Marathi Literature Festival
-				</div>
-				<nav id="stickynav" class="stickymenu">
-					<div class="menu-menu-1-container">
-						<ul id="stickymainnav" class="sf-menu">
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="../">Home</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="../about-us/">About us</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="../programme/">Programme</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="../speakers/">Speakers</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-16 current_page_item menu-item-37"><a href="../sponsors">Sponsors</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="../gallery/">Gallery</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334"><a href="../media/">Media</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="../contact-us/">Contact us</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
 	</header>
+
 	<div id="wrapper">
 		<div class="menu-fixer"></div>
 		<div class="pagetitlebar">
 			<div class="centered-wrapper">
 				<div class="page-title-subtitle">
-					<span class="abcd">Sponsors</span>
+					<span class="abcd">प्रायोजक</span>
 				</div>
 			</div>
 		</div>
@@ -270,11 +200,13 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 											<p style="text-align: center;">Powered by</p>
 										</div>
 									</div>
-									<div class="wpb_single_image wpb_content_element vc_align_left">
-										<figure class="wpb_wrapper vc_figure">
-											<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="533" height="200" src="../wp-content/uploads/2016/11/express-inn.png" class="vc_single_image-img attachment-full" alt="express-inn" srcset="http://marathiliteraturefestival.com/wp-content/uploads/2016/11/express-inn.png 533w, http://marathiliteraturefestival.com/wp-content/uploads/2016/11/express-inn-300x113.png 300w" sizes="(max-width: 533px) 100vw, 533px" /></div>
-										</figure>
-									</div>
+									<a href="http://www.expressinnindia.com/" target="_BLANK">
+										<div class="wpb_single_image wpb_content_element vc_align_left">
+											<figure class="wpb_wrapper vc_figure">
+												<div class="vc_single_image-wrapper vc_box_border_grey"><img width="533" height="200" src="../wp-content/uploads/2016/13/Express_inn.png" class="vc_single_image-img attachment-full" alt="express-inn" /></div>
+											</figure>
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -286,11 +218,13 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 											<p style="text-align: center;">In association with</p>
 										</div>
 									</div>
-									<div class="wpb_single_image wpb_content_element vc_align_left">
-										<figure class="wpb_wrapper vc_figure">
-											<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="532" height="200" src="../wp-content/uploads/2016/11/abp-majha.png" class="vc_single_image-img attachment-full" alt="abp-majha" srcset="http://marathiliteraturefestival.com/wp-content/uploads/2016/11/abp-majha.png 532w, http://marathiliteraturefestival.com/wp-content/uploads/2016/11/abp-majha-300x113.png 300w" sizes="(max-width: 532px) 100vw, 532px" /></div>
-										</figure>
-									</div>
+									<a href="http://abpmajha.abplive.in/" target="_BLANK">
+										<div class="wpb_single_image wpb_content_element vc_align_left">
+											<figure class="wpb_wrapper vc_figure">
+												<div class="vc_single_image-wrapper vc_box_border_grey"><img width="532" height="200" src="../wp-content/uploads/2016/13/ABP_Manjha.png" class="vc_single_image-img attachment-full" alt="abp-majha" /></div>
+											</figure>
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -300,7 +234,8 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 							</div>
 						</div>
 					</div>
-					<div   class="vc_row wpb_row vc_row-fluid"  style=""  data-token="vvbej">
+
+					<div class="vc_row wpb_row vc_row-fluid"  style=""  data-token="vvbej">
 						<div class="wpb_column vc_column_container vc_col-sm-12">
 							<div class="vc_column-inner ">
 								<div class="wpb_wrapper">
@@ -309,24 +244,9 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 							</div>
 						</div>
 					</div>
-					<div   class="vc_row wpb_row vc_row-fluid"  style=""  data-token="b24gd">
-						<div class="wpb_column vc_column_container vc_col-sm-3">
-							<div class="vc_column-inner ">
-								<div class="wpb_wrapper">
-									<div class="wpb_text_column wpb_content_element  spotag">
-										<div class="wpb_wrapper">
-											<p style="text-align: center;">Knowledge Partner</p>
-										</div>
-									</div>
-									<div class="wpb_single_image wpb_content_element vc_align_left">
-										<figure class="wpb_wrapper vc_figure">
-											<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/11/rajhans.png" class="vc_single_image-img attachment-full" alt="rajhans" srcset="http://marathiliteraturefestival.com/wp-content/uploads/2016/11/rajhans.png 531w, http://marathiliteraturefestival.com/wp-content/uploads/2016/11/rajhans-300x113.png 300w" sizes="(max-width: 531px) 100vw, 531px" /></div>
-										</figure>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="wpb_column vc_column_container vc_col-sm-9">
+
+					<div class="vc_row wpb_row vc_row-fluid"  style=""  data-token="vvbej">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
 							<div class="vc_column-inner ">
 								<div class="wpb_wrapper">
 									<div class="wpb_text_column wpb_content_element  spotag">
@@ -335,44 +255,175 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 										</div>
 									</div>
 									<div class="vc_row wpb_row vc_inner vc_row-fluid">
-										<div class="wpb_column vc_column_container vc_col-sm-4">
-											<div class="vc_column-inner ">
-												<div class="wpb_wrapper">
-													<div class="wpb_single_image wpb_content_element vc_align_left">
-														<figure class="wpb_wrapper vc_figure">
-															<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/11/kusumagraj.png" class="vc_single_image-img attachment-full" alt="kusumagraj" srcset="http://marathiliteraturefestival.com/wp-content/uploads/2016/11/kusumagraj.png 531w, http://marathiliteraturefestival.com/wp-content/uploads/2016/11/kusumagraj-300x113.png 300w" sizes="(max-width: 531px) 100vw, 531px" /></div>
-														</figure>
+										<a href="http://www.kusumagraj.org" target="_BLANK">
+											<div class="wpb_column vc_column_container vc_col-sm-4">
+												<div class="vc_column-inner ">
+													<div class="wpb_wrapper">
+														<div class="wpb_single_image wpb_content_element vc_align_left">
+															<figure class="wpb_wrapper vc_figure" style="padding: 20px;">
+																<div class="vc_single_image-wrapper vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/13/Kusumagraj.png" class="vc_single_image-img attachment-full" alt="kusumagraj" /></div>
+															</figure>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="wpb_column vc_column_container vc_col-sm-4">
-											<div class="vc_column-inner ">
-												<div class="wpb_wrapper">
-													<div class="wpb_single_image wpb_content_element vc_align_left">
-														<figure class="wpb_wrapper vc_figure">
-															<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/11/vani.png" class="vc_single_image-img attachment-full" alt="vani" srcset="http://marathiliteraturefestival.com/wp-content/uploads/2016/11/vani.png 531w, http://marathiliteraturefestival.com/wp-content/uploads/2016/11/vani-300x113.png 300w" sizes="(max-width: 531px) 100vw, 531px" /></div>
-														</figure>
+										</a>
+										<a href="http://vishwasbank.com/" target="_BLANK">
+											<div class="wpb_column vc_column_container vc_col-sm-4">
+												<div class="vc_column-inner ">
+													<div class="wpb_wrapper">
+														<div class="wpb_single_image wpb_content_element vc_align_left">
+															<figure class="wpb_wrapper vc_figure" style="padding: 20px;">
+																<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/13/Vishwas_Bank.png" class="vc_single_image-img attachment-full" alt="vishwas bank" /></div>
+															</figure>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="wpb_column vc_column_container vc_col-sm-4">
-											<div class="vc_column-inner ">
-												<div class="wpb_wrapper">
-													<div class="wpb_single_image wpb_content_element vc_align_left">
-														<figure class="wpb_wrapper vc_figure">
-															<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/11/westland.png" class="vc_single_image-img attachment-full" alt="westland" srcset="http://marathiliteraturefestival.com/wp-content/uploads/2016/11/westland.png 531w, http://marathiliteraturefestival.com/wp-content/uploads/2016/11/westland-300x113.png 300w" sizes="(max-width: 531px) 100vw, 531px" /></div>
-														</figure>
+										</a>
+										<a href="javascript:void();" target="_BLANK">
+											<div class="wpb_column vc_column_container vc_col-sm-4">
+												<div class="vc_column-inner ">
+													<div class="wpb_wrapper">
+														<div class="wpb_single_image wpb_content_element vc_align_left">
+															<figure class="wpb_wrapper vc_figure" style="padding: 20px;">
+																<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/13/Violin.png" class="vc_single_image-img attachment-full" alt="Violin" /></div>
+															</figure>
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
+										</a>
+										<a href="https://www.rajhansprakashan.com/" target="_BLANK">
+											<div class="wpb_column vc_column_container vc_col-sm-4">
+												<div class="vc_column-inner ">
+													<div class="wpb_wrapper">
+														<div class="wpb_single_image wpb_content_element vc_align_left">
+															<figure class="wpb_wrapper vc_figure" style="padding: 20px;">
+																<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/13/Rajhans.png" class="vc_single_image-img attachment-full" alt="Rajhans"  /></div>
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="http://www.vaniprakashan.in/" target="_BLANK">
+											<div class="wpb_column vc_column_container vc_col-sm-4">
+												<div class="vc_column-inner ">
+													<div class="wpb_wrapper">
+														<div class="wpb_single_image wpb_content_element vc_align_left">
+															<figure class="wpb_wrapper vc_figure" style="padding: 20px;">
+																<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/13/Vani_Prakashan.png" class="vc_single_image-img attachment-full" alt="Vani_Prakashan"  /></div>
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="http://www.srcaterersnasik.com/" target="_BLANK">
+											<div class="wpb_column vc_column_container vc_col-sm-4">
+												<div class="vc_column-inner ">
+													<div class="wpb_wrapper">
+														<div class="wpb_single_image wpb_content_element vc_align_left">
+															<figure class="wpb_wrapper vc_figure" style="padding: 20px;">
+																<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/13/SRK_Terers.png" class="vc_single_image-img attachment-full" alt="SRK_Terers"  /></div>
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<div class="vc_row wpb_row vc_row-fluid"  style=""  data-token="vvbej">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="vc_column-inner ">
+								<div class="wpb_wrapper">
+									<div style="clear:both; width:100%; height:60px"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="vc_row wpb_row vc_row-fluid"  style=""  data-token="b24gd">
+						<div class="wpb_column vc_column_container vc_col-sm-3">
+							<div class="vc_column-inner ">
+								<div class="wpb_wrapper">
+									<div class="wpb_text_column wpb_content_element  spotag">
+										<div class="wpb_wrapper">
+											<p style="text-align: center;">Web Partner</p>
+										</div>
+									</div>
+									<a href="http://www.mobisofttech.co.in/" target="_BLANK">
+										<div class="wpb_single_image wpb_content_element vc_align_left">
+											<figure class="wpb_wrapper vc_figure" style="padding-top: 20px;">
+												<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/13/mobisoft.png" class="vc_single_image-img attachment-full" alt="Mobisoft Technology India Pvt. Ltd." /></div>
+											</figure>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-3">
+							<div class="vc_column-inner ">
+								<div class="wpb_wrapper">
+									<div class="wpb_text_column wpb_content_element  spotag">
+										<div class="wpb_wrapper">
+											<p style="text-align: center;">Outdoor Partner</p>
+										</div>
+									</div>
+									<a href="javascript:void();" target="_BLANK">
+										<div class="wpb_single_image wpb_content_element vc_align_left">
+											<figure class="wpb_wrapper vc_figure">
+												<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/13/Shree_Balaji.png" class="vc_single_image-img attachment-full" alt="shree balaji" /></div>
+											</figure>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-3">
+							<div class="vc_column-inner ">
+								<div class="wpb_wrapper">
+									<div class="wpb_text_column wpb_content_element  spotag">
+										<div class="wpb_wrapper">
+											<p style="text-align: center;">Radio Partner</p>
+										</div>
+									</div>
+									<a href="http://www.myfmindia.com/nashik/" target="_BLANK">
+										<div class="wpb_single_image wpb_content_element vc_align_left">
+											<figure class="wpb_wrapper vc_figure">
+												<div class="vc_single_image-wrapper vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/13/MY_FM.png" class="vc_single_image-img attachment-full" alt="FM" /></div>
+											</figure>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-3">
+							<div class="vc_column-inner ">
+								<div class="wpb_wrapper">
+									<div class="wpb_text_column wpb_content_element  spotag">
+										<div class="wpb_wrapper">
+											<p style="text-align: center;">Digital Partner</p>
+										</div>
+									</div>
+									<a href="https://divyamarathi.bhaskar.com/" target="_BLANK">
+										<div class="wpb_single_image wpb_content_element vc_align_left">
+											<figure class="wpb_wrapper vc_figure">
+												<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="531" height="200" src="../wp-content/uploads/2016/13/Divya_Marathi.png" class="vc_single_image-img attachment-full" alt="divya marathi" /></div>
+											</figure>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</article>
 				<div class="double-space"></div>
 			</section>
@@ -384,8 +435,13 @@ html body {background: #efefef;}#wrapper {background: #ffffff;}#header {backgrou
 			<!--end centered-wrapper-->
 			<div id="bottomfooter"  >
 				<div class="centered-wrapper">
-					<div class="percent-two-third">
-						<p>© 2017 MLF. All rights reserved.</p>
+					<div class="percent-one-third">
+						<p>© 2017 MLF. सर्व अधिकार राखीव.</p>
+					</div>
+					<div class="percent-one-third">
+						<center>
+							पावर्ड बाय<a href="http://www.mobisofttech.co.in" target="_BLANK" style="text-decoration: none; border-bottom: 1px solid #3e70fd; color: #000;"> Mobisoft Technology India Pvt. Ltd.</a>
+						</center>
 					</div>
 					<!--end percent-two-third-->
 					<div class="percent-one-third column-last">

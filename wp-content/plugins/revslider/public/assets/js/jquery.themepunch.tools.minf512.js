@@ -49,7 +49,7 @@ if (window.tplogs==true)
  * DATE: 2015-12-22
  * UPDATES AND DOCS AT: http://greensock.com
  *
- * @license Copyright (c) 2008-2016, GreenSock. All rights reserved.
+ * @license Copyright (c) 2008-2016, GreenSock. सर्व अधिकार राखीव.
  * This work is subject to the terms at http://greensock.com/standard-license or for
  * Club GreenSock members, the software agreement that was issued with your membership.
  * 
@@ -63,7 +63,7 @@ if (window.tplogs==true)
  * DATE: 2015-12-22
  * UPDATES AND DOCS AT: http://greensock.com
  *
- * @license Copyright (c) 2008-2016, GreenSock. All rights reserved.
+ * @license Copyright (c) 2008-2016, GreenSock. सर्व अधिकार राखीव.
  * This work is subject to the terms at http://greensock.com/standard-license or for
  * Club GreenSock members, the software agreement that was issued with your membership.
  * 
@@ -77,7 +77,7 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
  * DATE: 2015-12-22
  * UPDATES AND DOCS AT: http://greensock.com
  *
- * @license Copyright (c) 2008-2016, GreenSock. All rights reserved.
+ * @license Copyright (c) 2008-2016, GreenSock. सर्व अधिकार राखीव.
  * This work is subject to the terms at http://greensock.com/standard-license or for
  * Club GreenSock members, the software agreement that was issued with your membership.
  * 
@@ -91,7 +91,7 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
  * DATE: 2015-12-22
  * UPDATES AND DOCS AT: http://greensock.com
  *
- * @license Copyright (c) 2008-2016, GreenSock. All rights reserved.
+ * @license Copyright (c) 2008-2016, GreenSock. सर्व अधिकार राखीव.
  * This work is subject to the terms at http://greensock.com/standard-license or for
  * Club GreenSock members, the software agreement that was issued with your membership.
  * 
@@ -106,7 +106,7 @@ g.setRatio=Qa,g.pr=-11,c=!0,g.b=o,k=$(a,e),l=a._gsClassPT){for(m={},n=l.data;n;)
  * DATE: 2015-08-15
  * UPDATES AND DOCS AT: http://greensock.com
  *
- * @license Copyright (c) 2008-2016, GreenSock. All rights reserved.
+ * @license Copyright (c) 2008-2016, GreenSock. सर्व अधिकार राखीव.
  * SplitText is a Club GreenSock membership benefit; You must have a valid membership to use
  * this code without violating the terms of use. Visit http://www.greensock.com/club/ to sign up or get more details.
  * This work is subject to the software agreement that was issued with your membership.
